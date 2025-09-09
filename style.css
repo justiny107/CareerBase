@@ -1,0 +1,161 @@
+/* NAVIGATION BAR */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #00bcd4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+/* Optional: Add spacing so navbar doesn't cover the top of sections when linked */
+section {
+  scroll-margin-top: 80px; /* Adjust if you make nav sticky */
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #222;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero .highlight {
+  color: #00bcd4;
+}
+
+/* SECTION HEADINGS */
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-block;
+}
+
+/* ABOUT SECTION */
+.about {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+/* SKILLS SECTION */
+.skills {
+  background-color: #f0f0f0;
+  padding: 3rem 0;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills-list li {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* CONTACT SECTION */
+.contact {
+  background-color: #f0f0f0;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.contact a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+}
